@@ -9,14 +9,13 @@ import {IAxelarGasService} from "@axelar-network/axelar-gmp-sdk-solidity/contrac
 
 import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
 
-//Mumbai -> Goerli
 contract InterchainDefi is AxelarExecutable {
-    address public wethGoerli = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6; // goerli
-    address public uniGoerli = 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984; //goerli
+    address public wethGoerli = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6;
+    address public uniGoerli = 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984;
 
     IAxelarGasService public immutable gasService;
 
-    // goerli
+    // goerli router
     ISwapRouter public immutable swapRouter =
         ISwapRouter(0xE592427A0AEce92De3Edee1F18E0157C05861564);
 

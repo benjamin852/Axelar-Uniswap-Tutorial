@@ -8,6 +8,7 @@ async function main() {
 
     const connectedWallet = getWallet(chains[0].rpc)
 
+
     const privateKey = process.env.PRIVATE_KEY;
 
     const gatewayMumbai = '0xBF62ef1486468a6bd26Dd669C06db43dEd5B849B'
